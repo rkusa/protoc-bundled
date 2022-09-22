@@ -24,11 +24,11 @@ fn main() {
 
 fn exectuable() -> &'static str {
     match (env::consts::OS, env::consts::ARCH) {
-        ("linux", "x86_64") => "protoc-3.20.1-linux-x86_64",
-        ("linux", "aarch64") => "protoc-3.20.1-linux-aarch_64",
-        ("macos", "x86_64") => "protoc-3.20.1-osx-x86_64",
-        ("macos", "aarch64") => "protoc-3.20.1-osx-aarch_64",
-        ("windows", "x86_64") => "protoc-3.20.1-win64.exe",
+        ("linux", "x86_64") => "protoc-3.21.6-linux-x86_64",
+        ("linux", "aarch64") => "protoc-3.21.6-linux-aarch_64",
+        ("macos", "x86_64") => "protoc-3.21.6-osx-x86_64",
+        ("macos", "aarch64") => "protoc-3.21.6-osx-aarch_64",
+        ("windows", "x86_64") => "protoc-3.21.6-win64.exe",
         (os, arch) => panic!(
             "protoc-bundled does not include executable for {}@{}",
             os, arch
